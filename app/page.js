@@ -334,19 +334,21 @@ export default function PortfolioPage() {
 
             <div className="flex gap-6 justify-center">
               {[
-                { Icon: Github, link: "https://github.com/Gunturaa", label: "GitHub" },
-                { Icon: Linkedin, link: "#", label: "LinkedIn" },
-                { Icon: Mail, link: "mailto:gunturhanabi222@gmail.com", label: "Email" }
-              ].map(({ Icon, link, label }, i) => (
-                <a
-                  key={i}
-                  href={link}
-                  aria-label={label}
-                  className="w-12 h-12 rounded-full border border-slate-700 flex items-center justify-center hover:border-cyan-500 hover:bg-cyan-500/10 transition-all duration-300 hover:scale-110 hover:rotate-12"
-                >
-                  <Icon size={20} />
-                </a>
-              ))}
+  { Icon: Github, link: "https://github.com/Gunturaa", label: "GitHub" },
+  { Icon: Linkedin, link: "#", label: "LinkedIn" },
+  { Icon: Mail, link: "mailto:gunturhanabi222@gmail.com", label: "Email" }
+].map(({ Icon, link, label }, i) => (
+  <a
+    key={i}
+    href={link}
+    aria-label={label}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 rounded-full border border-slate-700 flex items-center justify-center hover:border-cyan-500 hover:bg-cyan-500/10 transition-all duration-300 hover:scale-110 hover:rotate-12"
+  >
+    <Icon size={20} />
+  </a>
+))}
             </div>
 
             {/* Floating Particles */}
