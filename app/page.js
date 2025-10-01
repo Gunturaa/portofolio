@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code2, Brain, Cpu, Database, Menu, X, Sparkles, ChevronRight, BookOpen, Award, GraduationCap, FileText } from 'lucide-react';
 import emailjs from 'emailjs-com';
+import Image from 'next/image';
 
 export default function PortfolioPage() {
   const [scrolled, setScrolled] = useState(false);
@@ -287,10 +288,12 @@ export default function PortfolioPage() {
             <div className="mb-8 inline-block group">
               <div className="relative">
                 {/* Ganti bagian ini dengan image Anda */}
-                <img 
-                  src="/gemini.png" 
+                <Image
+                  src="/gemini.png"
                   alt="Guntur Tri Atmaja"
-                  className="w-56 h-56 mx-auto rounded-full border-4 border-slate-800 shadow-2xl shadow-cyan-500/50 group-hover:scale-110 transition-transform duration-500 object-cover"
+                  width={224}
+                  height={224}
+                  className="mx-auto rounded-full border-4 border-slate-800 shadow-2xl shadow-cyan-500/50 group-hover:scale-110 transition-transform duration-500 object-cover"
                 />
                 
                 
@@ -310,7 +313,7 @@ export default function PortfolioPage() {
             </div>
             
             <p className="text-base md:text-lg text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Passionate learner exploring <span className="text-cyan-400 font-semibold">Web Development</span>, <span className="text-purple-400 font-semibold">Machine Learning</span>, and <span className="text-blue-400 font-semibold">IoT</span>. Combining creativity with technology to build innovative solutions.
+              I&apos;m a passionate informatics student who loves exploring various technologies, from Web Development and Machine Learning to IoT. I believe technology can make a real difference in everyday life, and I&apos;m constantly learning to turn ideas into reality.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -370,7 +373,7 @@ export default function PortfolioPage() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Passionate Learner</h3>
                       <p className="text-slate-300 leading-relaxed">
-                        I'm a passionate informatics student who loves exploring various technologies, from Web Development and Machine Learning to IoT. I believe technology can make a real difference in everyday life, and I'm constantly learning to turn ideas into reality.
+                        I&apos;m a passionate informatics student who loves exploring various technologies, from Web Development and Machine Learning to IoT. I believe technology can make a real difference in everyday life, and I&apos;m constantly learning to turn ideas into reality.
                       </p>
                     </div>
                   </div>
@@ -620,7 +623,7 @@ export default function PortfolioPage() {
         <section id="contact" className="py-24 px-6 bg-slate-900/30 backdrop-blur-sm">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Let's Collaborate
+              Lets Collaborate
             </h2>
             <p className="text-slate-300 text-lg mb-12">
               Interested in collaborating or discussing projects? Feel free to reach out!
@@ -673,7 +676,7 @@ export default function PortfolioPage() {
                   ) : 'Send Message'}
                 </button>
                 {submitStatus === 'success' && (
-                  <p className="text-green-400 mt-4">Message sent successfully! I'll get back to you soon.</p>
+                  <p className="text-green-400 mt-4">Message sent successfully! I&apos;ll get back to you soon.</p>
                 )}
                 {submitStatus === 'error' && (
                   <p className="text-red-400 mt-4">
