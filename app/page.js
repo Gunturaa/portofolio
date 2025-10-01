@@ -334,7 +334,7 @@ export default function PortfolioPage() {
 
             <div className="flex gap-6 justify-center">
               {[
-                { Icon: Github, link: "github.com/Gunturaa", label: "GitHub" },
+                { Icon: Github, link: "https://github.com/Gunturaa", label: "GitHub" },
                 { Icon: Linkedin, link: "#", label: "LinkedIn" },
                 { Icon: Mail, link: "mailto:gunturhanabi222@gmail.com", label: "Email" }
               ].map(({ Icon, link, label }, i) => (
